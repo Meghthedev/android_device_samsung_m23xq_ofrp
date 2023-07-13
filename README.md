@@ -1,4 +1,4 @@
-# TWRP Device configuration for Samsung Galaxy M23/F23 SM-M236B/SM-E236B (m23xq)
+# OFRP Device configuration for Samsung Galaxy M23/F23 SM-M236B/SM-E236B (m23xq)
 
 ## Device specifications
 Basic    | Spec Sheet
@@ -20,6 +20,10 @@ From Stock ROM
 ```
 m23xqxx-user 12 SP1A.210812.016 M236BXXU1BWA5 release-keys
 ```
+
+## Building
+Generally, see https://wiki.orangefox.tech/en/dev/building
+
 ## How to compile
 First repo init the twrp-12.1 tree:
 
