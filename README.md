@@ -28,9 +28,11 @@ Generally, see https://wiki.orangefox.tech/en/dev/building
 First repo init the twrp-12.1 tree:
 
 ```
-mkdir ~/android/twrp-12.1
-cd ~/android/twrp-12.1
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+mkdir ~/OrangeFox_sync
+cd ~/OrangeFox_sync
+git clone https://gitlab.com/OrangeFox/sync.git # (or, using ssh, "git clone git@gitlab.com:OrangeFox/sync.git")
+cd ~/OrangeFox_sync/sync/
+./orangefox_sync.sh --branch 12.1 --path ~/fox_12.1
 mkdir -p .repo/local_manifests
 ```
 
@@ -53,5 +55,5 @@ Finally execute these:
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch twrp_m23xq-eng
-mka bootimage
+mka adbd recoveryimage
 ```
